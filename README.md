@@ -1,11 +1,11 @@
-# Express IP
+# Express IP Info
 
 This is an express module for getting IP information using geoip-lite. It can also be used as express middleware. Basically its an express middleware. So with this, you can get info about an IP.
 
 # Installation
 
 ```
-npm install express-ip
+npm install express-ipinfo
 ```
 
 # Usage
@@ -14,7 +14,7 @@ npm install express-ip
 ```
 const express = require('express');
 const app = express();
-const expressip = require('express-ip');
+const expressip = require('express-ipinfo');
 app.use(expressip().getIpInfoMiddleware);
 
 app.get('/', function (req, res) {
@@ -26,7 +26,7 @@ app.get('/', function (req, res) {
 ```
 const express = require('express');
 const app = express();
-const expressip = require('express-ip');
+const expressip = require('express-ipinfo');
 const PORT = process.env.PORT || 7000;
 const path = require('path');
 
