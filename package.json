@@ -1,5 +1,5 @@
 {
-  "name": "express-ipinfo",
+  "name": "express-ip",
   "version": "1.0.0",
   "description": "An express middleware for getting information about an IP",
   "main": "index.js",
