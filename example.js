@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const expressip = require('express-ip');
+const expressip = require('express-ipinfo');
 const PORT = process.env.PORT || 7000;
 const path = require('path');
 
