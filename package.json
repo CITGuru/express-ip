@@ -1,0 +1,23 @@
+{
+  "name": "express-ip",
+  "version": "1.0.0",
+  "description": "An express middleware for getting information about an IP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "https://github.com/CITGuru/express-ip.git",
+  "keywords": [
+    "express",
+    "ip",
+    "geolocation",
+    "geoip",
+    "geo",
+    "middleware"
+  ],
+  "author": "Oyetoke Toby <oyetoketoby80@gmail.com> (http://medium.com/oyetoketobi)",
+  "license": "MIT",
+  "dependencies": {
+    "express-geoip": "^2.3.1"
+  }
+}
