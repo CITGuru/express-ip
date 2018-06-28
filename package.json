@@ -1,6 +1,6 @@
 {
   "name": "express-ip",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An express middleware for getting information about an IP",
   "main": "index.js",
   "scripts": {
