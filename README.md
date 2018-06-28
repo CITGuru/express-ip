@@ -47,4 +47,4 @@ app.listen(app.get('PORT'), function () {
 ```
 
 # Author
-Oyetoke Toby <oyetoketoby80@gmail.com> (http://patreon.com/oyetoketobi)
+Oyetoke Toby <oyetoketoby80@gmail.com> (http://patreon.com/oyetoketoby)
