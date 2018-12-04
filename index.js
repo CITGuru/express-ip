@@ -9,7 +9,7 @@ module.exports = function () {
             ip = ip.split(':').reverse()[0]
         }
         var lookedUpIP = geoip.lookup(ip);
-        if ((ip === '127.0.0.1' || '::1')) {
+        if ((ip === '127.0.0.1' || ip === '::1')) {
             return {error:"This won't work on localhost"}
         }
         if (!lookedUpIP){
