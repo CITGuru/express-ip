@@ -21,7 +21,7 @@ module.exports = function () {
     var getIpInfoMiddleware = function (req, res, next) {
         var xForwardedFor = (req.headers['x-forwarded-for'] || '').replace(/:\d+$/, '');
         var ip = xForwardedFor || req.connection.remoteAddress;
-        req.ipInfo = getIpInfo(ip);
+        req.ipInfo = { ip, ...getIpInfo(ip) };
         next();
     }
 
