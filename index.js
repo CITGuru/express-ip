@@ -8,11 +8,13 @@ module.exports = function () {
         if (ip.includes('::ffff:')) {
             ip = ip.split(':').reverse()[0]
         }
-        var lookedUpIP = geoip.lookup(ip);
-        if ((ip === '127.0.0.1' || ip === '::1')) {
-            return {error:"This won't work on localhost"}
+        // Loopback (localhost) addresses have no geolocation data, so
+        // return a meaningful message instead of a generic lookup error
+        if (/^127\./.test(ip) || ip === '::1' || ip === '0:0:0:0:0:0:0:1') {
+            return { error: "This won't work on localhost" }
         }
-        if (!lookedUpIP){
+        var lookedUpIP = geoip.lookup(ip);
+        if (!lookedUpIP) {
             return { error: "Error occured while trying to process the information" }
         }
         return lookedUpIP;
